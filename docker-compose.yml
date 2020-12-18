@@ -1,0 +1,12 @@
+version: '2.2'
+services:
+  web:
+    build:
+        context: .
+        dockerfile: Dockerfile
+    image: optolecom/codeigniter4:v1
+    ports:
+      - 9023:8080
+    working_dir: /var/www/html
+    volumes:
+      - $PWD:/var/www/html

@@ -1,0 +1,8 @@
+INSERT INTO 
+	t_user (name, pass, `type`, email, last_login) 
+	VALUES('User Example', '827ccb0eea8a706c4c34a16891f84e7b', 1, 'admin@test.com', NULL);
+
+
+
+Email : admin@test.com
+Password: 12345
