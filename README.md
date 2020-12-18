@@ -1,20 +1,30 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+Test Services Order System Dashboard
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Overview
+Test with PHP Codeigniter 4
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+Goals
+As a ervices data with PHP Codeigniter 4 we are trying to address following goals:
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+Requirements
+PHP (3.7.5)
+Ci4 (4.0)
+MySQL (5.1+)
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+#   Running the app
+
+$ git clone https://github.com/lefhiro-s/adc-order-system.git
+
+#   Configure database settings
+    configure the database with .env file
+
+$ php spark migrate
+$ php migrate
+$ php spark db:seed ConfigurationSeeder
+$ php spark db:seed OfficeSeeder
+$ php spark db:seed UserSeeder (optional: create three test users)
+
+
+# Run to start the server
+$ php spark serve
+Browse to http://localhost:8080
